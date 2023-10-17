@@ -36,6 +36,22 @@ void main() {
         var valorSaque = double.parse(stdin.readLineSync().toString());
         caixa1.sacarDinheiro(conta1, valorSaque);
         break;
+
+      case 3:
+        caixa1.consultarSaldo(conta1);
+        break;
+
+      case 4:
+        caixa1.consultarDados(conta1);
+        break;
+
+      case 5:
+        print('Finalizando...\nFinalizado! Tenha um bom dia!');
+        return;
+
+      default:
+        print('Opção inválida! Tente novamente');
+        break;
     }
   }
 }
