@@ -16,7 +16,7 @@ class ContaBancaria {
 
     switch (opcao) {
       case 1:
-        print('Novo saldo: $saldo');
+        print('Novo saldo: $saldo\n');
         break;
 
       default:
@@ -36,7 +36,7 @@ class ContaBancaria {
 
       switch (opcao) {
         case 1:
-          print('Novo saldo: $saldo');
+          print('Novo saldo: $saldo\n');
           break;
 
         default:
@@ -46,19 +46,19 @@ class ContaBancaria {
 
       return true;
     } else {
-      print('Saldo insuficiente para saque.');
+      print('Saldo insuficiente para saque.\n');
       return false;
     }
   }
 
   //Criação da função de consultar saldo
   void consultarSaldo() {
-    print('Seu saldo em conta: $saldo');
+    print('\nSeu saldo em conta: $saldo\n');
   }
 
   //Criação da função consultar dados do usuário
   void consultarDados() {
     print(
-        'Nome do titular: $titular\nNúmero da conta: $conta\nSaldo atual: $saldo');
+        '\nNome do titular: $titular\nNúmero da conta: $conta\nSaldo atual: $saldo\n');
   }
 }

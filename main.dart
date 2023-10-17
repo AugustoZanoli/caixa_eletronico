@@ -16,7 +16,7 @@ void main() {
 
   while (true) {
     print('\nEscolha uma opção para realizar: ');
-    print('\n1- Realziar depósito');
+    print('\n1- Realizar depósito');
     print('\n2- Realizar saque');
     print('\n3- Consultar saldo');
     print('\n4- Consultar dados');
@@ -26,30 +26,42 @@ void main() {
 
     switch (opcao) {
       case 1:
-        print('Informe o valor do depósito: ');
+        print('\x1B[2J\x1B[0;0H');
+        print('Informe o valor do depósito: \n');
         var valorDeposito = double.parse(stdin.readLineSync().toString());
+        print('\n');
         caixa1.depositarDinheiro(conta1, valorDeposito);
         break;
 
       case 2:
-        print('Informe o valor do saque: ');
+        print('\x1B[2J\x1B[0;0H');
+        print('Informe o valor do saque: \n');
         var valorSaque = double.parse(stdin.readLineSync().toString());
+        print('\n');
         caixa1.sacarDinheiro(conta1, valorSaque);
         break;
 
       case 3:
+        print('\x1B[2J\x1B[0;0H');
+        print('\n');
         caixa1.consultarSaldo(conta1);
         break;
 
       case 4:
+        print('\x1B[2J\x1B[0;0H');
+        print('\n');
         caixa1.consultarDados(conta1);
         break;
 
       case 5:
+        print('\x1B[2J\x1B[0;0H');
+        print('\n');
         print('Finalizando...\nFinalizado! Tenha um bom dia!');
         return;
 
       default:
+        print('\x1B[2J\x1B[0;0H');
+        print('\n');
         print('Opção inválida! Tente novamente');
         break;
     }
