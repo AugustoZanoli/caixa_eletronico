@@ -12,4 +12,8 @@ class CaixaEletronico {
   void consultarSaldo(ContaBancaria conta) {
     conta.consultarSaldo();
   }
+
+  void consultarDados(ContaBancaria conta) {
+    conta.consultarDados();
+  }
 }
