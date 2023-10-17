@@ -55,4 +55,10 @@ class ContaBancaria {
   void consultarSaldo() {
     print('Seu saldo em conta: $saldo');
   }
+
+  //Criação da função consultar dados do usuário
+  void consultarDados() {
+    print(
+        'Nome do titular: $titular\nNúmero da conta: $conta\nSaldo atual: $saldo');
+  }
 }
