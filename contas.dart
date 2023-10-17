@@ -50,4 +50,9 @@ class ContaBancaria {
       return false;
     }
   }
+
+  //Criação da função de consultar saldo
+  void consultarSaldo() {
+    print('Seu saldo em conta: $saldo');
+  }
 }
